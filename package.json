@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "start": "node index.js"
+ },
   "dependencies": {
     "smoothie": "^1.35.0"
   }
+  
 }

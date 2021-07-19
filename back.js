@@ -142,8 +142,6 @@ smoothie.addTimeSeries(line1, { strokeStyle:'#81c995', fillStyle:'rgba(49, 62, 5
     var randomNumber = Math.floor(Math.random()*textArray.length);
 
         document.getElementById("noticias").innerHTML = textArray[randomNumber];
-        app.listen(process.env.PORT || 3000, function(){
-            console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-          });
+
 
 }
