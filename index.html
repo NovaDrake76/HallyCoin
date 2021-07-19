@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HallyCoins</title>
+
+        <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
+    <link rel="icon" href="/images/udyr.png">
+
+    <script
+    type="text/javascript"
+    src="back.js">
+    </script>
+    <script type="text/javascript" src="/node_modules/smoothie/smoothie.js"></script>
+
+
+</head>
+
+<body onload="number(), graph(), news()" style="background-color: #242f45;">
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color:#181f2f;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+  
+      <!-- Navbar brand -->
+      <h1 style="color: white;">Hallycoins: <span id = "hallycoins"></span></h1> 
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+        </ul>
+  
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+    <div class=" ms-3 mt-3" >
+        <button class="btn btn-danger" onclick="duplax()">Dupla com X</button>
+        <button id = "dudu" class="btn btn-danger" onclick="dupladudu()" style="display: none;">Dupla com Dudu</button>
+    
+        <div class="d-flex ">
+        <div class="d-flex-column mt-5 w-25">
+            <button id = "btn1" class="btn btn-primary mb-2 w-75" onclick="compra1()" disabled>Comprar um Segurança (1000)</button>
+            <button id = "btn2" class="btn btn-primary mb-2 w-75" onclick="compra2()" disabled>Comprar um Corno (10000)</button>
+            <button id = "btn3" class="btn btn-primary mb-2 w-75" onclick="compra3()" disabled>Comprar um JV  (100000)</button>
+            <button id = "btn4" class="btn btn-primary mb-2 w-75" onclick="compra4()" disabled>Comprar uma Dupla Dinâmica (1000000)</button>
+            <button id = "btn5" class="btn btn-primary mb-2 w-75" onclick="compra5()" disabled>Comprar um Dono de Terras</button>
+            <button id = "btn6" class="btn btn-primary mb-2 w-75" onclick="compra6()" disabled>O que isso faz?</button>
+            <button id = "btn7" class="btn btn-primary mb-2 w-75" onclick="compra7()" disabled>Breno olha pra você</button>
+            
+        </div>
+
+        <div class="grafico">
+            <canvas id="mycanvas" width="750" height="500"></canvas>
+        </div>
+    
+
+        <div class="d-flex-column overflow-auto border border-light ms-3 me-3 w-25 rounded-3 text-center" style="height: 500px;">
+            <img class="img-fluid" id = "breno" src="images/breno.png" alt="breno" style="display: none;">
+            <h3 class="ms-2" id="guardei" style="display: none; color: white;"> guardei pra awp </h3>
+            <img class="img-fluid" id = "assalto" src="images/assalto.png" alt="assalto" style="display: none;">
+            <img class="img-fluid" id = "dono" src="images/dono.png" alt="dono" style="display: none;">
+            <img class="img-fluid" id = "dupla" src="images/dupla.png" alt="dupla" style="display: none;">
+            <img class="img-fluid" id = "jv" src="images/jv.png" alt="jv" style="display: none;">
+            <img class="img-fluid" id = "alce" src="images/alce.png" alt="alce" style="display: none;">
+            <img class="img-fluid" id = "gabrises" src="images/gabrises.png" alt="gabrises" style="display: none;">
+
+        </div>
+    </div>
+    
+    </div>
+
+<footer class=" text-center " style="background-color:#37496b;">
+
+    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
+        <marquee style="color: white; font-size: 25px;" behavior="scroll" direction="left"><span id="noticias"></span></marquee>
+    </div>
+  </footer>
+</body>
+</html>
