@@ -6,6 +6,9 @@
     "node": "16.0.0"
     },
  
+  "scripts": {
+    "start": "node back.js"
+ },
   "dependencies": {
     "smoothie": "^1.35.0"
   }
