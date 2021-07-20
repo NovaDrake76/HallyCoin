@@ -1,4 +1,5 @@
 ��# HallyCoin
 
 Idle
-needs Node
+
+https://hallycoin.000webhostapp.com/index.html
