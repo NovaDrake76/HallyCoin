@@ -54,6 +54,7 @@ function dupladudu(){
 
 function compra1(){
     document.getElementById("gabrises").style.display = "inline";
+    document.getElementById("pobre").style.display = "none";
     document.getElementById("btn1").style.display = "none";
     x = x - 1000;
     a = 10;
@@ -97,7 +98,22 @@ function compra7(){
     document.getElementById("guardei").style.display = "flex";
     x = 0;
     a = 0;
+    var novoBotao = document.createElement("BUTTON");
+    novoBotao.innerHTML = "Dupla com Hally";
+    novoBotao.className = "btn btn-danger";
+    novoBotao.id = "duplaHally";
+    novoBotao.onclick = async function newGamePlus(){
+    
+        while(true){
+            x = Math.random()*1000;
+            await sleep(400);
+        }
+    }
+
+    document.getElementById("duplas").appendChild(novoBotao);
+
 }
+
 
 function graph(){
 
@@ -121,6 +137,8 @@ smoothie.addTimeSeries(line1, { strokeStyle:'#81c995', fillStyle:'rgba(49, 62, 5
 
 }
 
+setInterval(news, 15000);
+
  function news(){
 
     var textArray = [
@@ -135,9 +153,11 @@ smoothie.addTimeSeries(line1, { strokeStyle:'#81c995', fillStyle:'rgba(49, 62, 5
         'A eleição de Max Miller foi limpa e sem apoio externo',
         'Não pergunte a Romerito',
         'Rodrigo é o Batatão de Toy Story',
-        'A piada é o seguinte: O professor coloca uma questão de viagem no tempo e...',
+        'A piada é o seguinte: Danilo compra na alta e...',
         'Daí o médico te fala: pela manhã, uma xícara de café e um tapa em hally. Melhor obedecer o doutor',
         'Ari tem um server de minecraft secreto, só perguntar pelo botão de fazer cocô que ele passa o IP',
+        'https://github.com/laynH/Anime-Girls-Holding-Programming-Books',
+        'O disco voador cruzou o corredor'
         
     ];
     var randomNumber = Math.floor(Math.random()*textArray.length);
