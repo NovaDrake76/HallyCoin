@@ -96,6 +96,7 @@ function compra6(){
 function compra7(){
     document.getElementById("breno").style.display = "inline";
     document.getElementById("guardei").style.display = "flex";
+    document.getElementById("btn7").style.display = "none";
     x = 0;
     a = 0;
     var novoBotao = document.createElement("BUTTON");
