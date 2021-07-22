@@ -41,7 +41,7 @@
     <div class="container-fluid">
         <img class="img-fluid" src="/images/HS.webP" alt="icon" height="90px" width="90px">
       <!-- Navbar brand -->
-      <h1 style="color: white;">Hallycoins: <span id = "hallycoins"></span></h1> 
+      <h1 id="titleHs" style="color: white;">Hallycoins: <span id = "hallycoins"></span></h1> 
       <!-- Collapsible wrapper -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -56,48 +56,51 @@
     <div class=" ms-3 mt-3" >
 
         <div id="duplas">
-            <button class="btn btn-danger" onclick="duplax()">Dupla com X</button>
-            <button id = "dudu" class="btn btn-danger" onclick="dupladudu()" style="display: none;">Dupla com Dudu</button>
+            <button id="charles" class="btn btn-danger" onclick="duplax()">Dupla com X</button>
+            <button id = "dudu" class="btn btn-danger " onclick="dupladudu()" style="display: none;">Dupla com Dudu</button>
         </div>
         
-        <div class="d-flex ">
-        <div class="d-flex-column mt-5 w-25 text-start text-md-center">
-            <button id = "btn1" class="btn btn-primary mb-2 w-75" onclick="compra1()" disabled>Comprar um Segurança (1000)</button>
-            <button id = "btn2" class="btn btn-primary mb-2 w-75" onclick="compra2()" disabled>Comprar um Corno (10000)</button>
-            <button id = "btn3" class="btn btn-primary mb-2 w-75" onclick="compra3()" disabled>Comprar um JV  (100000)</button>
-            <button id = "btn4" class="btn btn-primary mb-2 w-75" onclick="compra4()" disabled>Comprar uma Dupla Dinâmica (1000000)</button>
-            <button id = "btn5" class="btn btn-primary mb-2 w-75" onclick="compra5()" disabled>Comprar um Dono de Terras</button>
-            <button id = "btn6" class="btn btn-primary mb-2 w-75" onclick="compra6()" disabled>O que isso faz?</button>
-            <button id = "btn7" class="btn btn-primary mb-2 w-75" onclick="compra7()" disabled>Breno olha pra você</button>
-            <div class="w-100">
+        <div class="d-flex" >
+        <div class="d-flex-column mt-5 w-25 text-start text-md-center" >
+            <div id="compras">
+                <button id = "btn1" class="btn btn-primary mb-2 w-75" onclick="compra1()" disabled>Comprar um Segurança (1000)</button>
+                <button id = "btn2" class="btn btn-primary mb-2 w-75" onclick="compra2()" disabled>Comprar um Corno (10000)</button>
+                <button id = "btn3" class="btn btn-primary mb-2 w-75" onclick="compra3()" disabled>Comprar um JV  (100000)</button>
+                <button id = "btn4" class="btn btn-primary mb-2 w-75" onclick="compra4()" disabled>Comprar uma Dupla Dinâmica (1000000)</button>
+                <button id = "btn5" class="btn btn-primary mb-2 w-75" onclick="compra5()" disabled>Comprar um Dono de Terras</button>
+                <button id = "btn6" class="btn btn-primary mb-2 w-75" onclick="compra6()" disabled>O que isso faz?</button>
+                <button id = "btn7" class="btn btn-primary mb-2 w-75" onclick="compra7()" disabled>Breno olha pra você</button>
+            </div>
+            <div class="w-100 mt-2">
                 <a class="btn btn-primary " target=”_blank” style="background-color: #333333;" href="https://github.com/NovaDrake76/HallyCoin" role="button"><i class="fab fa-github fa-2x"></i></a>
                 <a class="btn btn-primary " target=”_blank” style="background-color: #333333;" href="https://discord.com/channels/@me/838928356413800498" role="button"><i class="fab fa-discord fa-2x"></i></a>
             </div>
         </div>
         
 
-            <canvas class="d-none d-md-block mb-2" id="mycanvas" width="750" height="500"></canvas>    
+            <canvas class="d-none d-md-block mb-2 " id="mycanvas" width="750" height="500"></canvas>    
 
         <div id="contImages" class="d-flex-column overflow-auto border border-light ms-3 me-3 w-25 rounded-3 text-center" style="height: 500px;">
             <div id="pobre" class="text-white d-flex-column">
                 <span>você ainda é pobre</span>
                 <img src="/images/maxmitai.gif"  width="150" height="150" alt="pobre">
             </div>
-            <img class="img-fluid" id = "breno" src="images/breno.webP" alt="breno" style="display: none;">
-            <h3 class="ms-2" id="guardei" style="display: none; color: white;"> guardei pra awp </h3>
-            <img class="img-fluid" id = "assalto" src="images/assalto.webP" alt="assalto" style="display: none;">
-            <img class="img-fluid" id = "dono" src="images/dono.webP" alt="dono" style="display: none;">
-            <img class="img-fluid" id = "dupla" src="images/dupla.webP" alt="dupla" style="display: none;">
-            <img class="img-fluid" id = "jv" src="images/jv.webP" alt="jv" style="display: none;">
-            <img class="img-fluid" id = "alce" src="images/alce.webP" alt="alce" style="display: none;">
-            <img class="img-fluid" id = "gabrises" src="images/gabrises.webP" alt="gabrises" style="display: none;">
-
+            <div id="1game">
+                <img class="img-fluid" id = "breno" src="images/breno.webP" alt="breno" style="display: none;">
+                <h3 class="ms-2" id="guardei" style="display: none; color: white;"> guardei pra awp </h3>
+                <img class="img-fluid" id = "assalto" src="images/assalto.webP" alt="assalto" style="display: none;">
+                <img class="img-fluid" id = "dono" src="images/dono.webP" alt="dono" style="display: none;">
+                <img class="img-fluid" id = "dupla" src="images/dupla.webP" alt="dupla" style="display: none;">
+                <img class="img-fluid" id = "jv" src="images/jv.webP" alt="jv" style="display: none;">
+                <img class="img-fluid" id = "alce" src="images/alce.webP" alt="alce" style="display: none;">
+                <img class="img-fluid" id = "gabrises" src="images/gabrises.webP" alt="gabrises" style="display: none;">
+            </div>
         </div>
     </div>
     
     </div>
 
-<footer class=" text-center " style="background-color:#37496b;">
+<footer class=" text-center fixed-bottom" style="background-color:#37496b;">
 
     <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
         <marquee style="color: white; font-size: 25px;" behavior="scroll" direction="left"><span id="noticias"></span></marquee>
